@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Default Prediction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Loan Default Prediction</h1>
+        <form id="prediction-form">
+            <label for="annual-income">Annual Income:</label>
+            <input type="number" id="annual-income" name="annual-income" required>
+            <label for="applicant-age">Applicant Age:</label>
+            <input type="number" id="applicant-age" name="applicant-age" required>
+            <label for="work-experience">Work Experience:</label>
+            <input type="number" id="work-experience" name="work-experience" required>
+            <label for="marital-status">Marital Status:</label>
+            <select id="marital-status" name="marital-status" required>
+                <option value="single">Single</option>
+                <option value="married">Married</option>
+            </select>
+            <label for="house-ownership">House Ownership:</label>
+            <select id="house-ownership" name="house-ownership" required>
+                <option value="rented">Rented</option>
+                <option value="owned">Owned</option>
+            </select>
+            <label for="vehicle-ownership">Vehicle Ownership:</label>
+            <select id="vehicle-ownership" name="vehicle-ownership" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+            <button type="submit">Predict</button>
+        </form>
+        <div id="prediction-result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
